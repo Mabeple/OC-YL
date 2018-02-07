@@ -14,6 +14,10 @@
 		77E14916202ADC510011D4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E14915202ADC510011D4FD /* Assets.xcassets */; };
 		77E14919202ADC510011D4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E14917202ADC510011D4FD /* LaunchScreen.storyboard */; };
 		77E1491C202ADC510011D4FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1491B202ADC510011D4FD /* main.m */; };
+		77E14981202B07F40011D4FD /* NSString+YLHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14980202B07F40011D4FD /* NSString+YLHash.m */; };
+		77E14986202B085E0011D4FD /* UILabel+YLContentInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14985202B085E0011D4FD /* UILabel+YLContentInsets.m */; };
+		77E14989202B09400011D4FD /* NSString+YLDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14988202B09400011D4FD /* NSString+YLDrawing.m */; };
+		77E1498C202B0E890011D4FD /* NSString+YLURLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1498B202B0E890011D4FD /* NSString+YLURLCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,16 @@
 		77E14918202ADC510011D4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77E1491A202ADC510011D4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77E1491B202ADC510011D4FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77E1497B202B06670011D4FD /* YLImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLImport.h; sourceTree = "<group>"; };
+		77E1497C202B06D70011D4FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		77E1497F202B07F40011D4FD /* NSString+YLHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YLHash.h"; sourceTree = "<group>"; };
+		77E14980202B07F40011D4FD /* NSString+YLHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YLHash.m"; sourceTree = "<group>"; };
+		77E14984202B085E0011D4FD /* UILabel+YLContentInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YLContentInsets.h"; sourceTree = "<group>"; };
+		77E14985202B085E0011D4FD /* UILabel+YLContentInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YLContentInsets.m"; sourceTree = "<group>"; };
+		77E14987202B093F0011D4FD /* NSString+YLDrawing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YLDrawing.h"; sourceTree = "<group>"; };
+		77E14988202B09400011D4FD /* NSString+YLDrawing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YLDrawing.m"; sourceTree = "<group>"; };
+		77E1498A202B0E890011D4FD /* NSString+YLURLCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YLURLCode.h"; sourceTree = "<group>"; };
+		77E1498B202B0E890011D4FD /* NSString+YLURLCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YLURLCode.m"; sourceTree = "<group>"; };
 		B5C178AAEB14C33C18CBD17E /* Pods-OC-YL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC-YL.release.xcconfig"; path = "Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +88,7 @@
 		77E1490B202ADC510011D4FD /* OC-YL */ = {
 			isa = PBXGroup;
 			children = (
+				77E14974202B06240011D4FD /* OC-YL */,
 				77E1490C202ADC510011D4FD /* AppDelegate.h */,
 				77E1490D202ADC510011D4FD /* AppDelegate.m */,
 				77E1490F202ADC510011D4FD /* ViewController.h */,
@@ -83,8 +98,73 @@
 				77E14917202ADC510011D4FD /* LaunchScreen.storyboard */,
 				77E1491A202ADC510011D4FD /* Info.plist */,
 				77E1491B202ADC510011D4FD /* main.m */,
+				77E1497C202B06D70011D4FD /* PrefixHeader.pch */,
 			);
 			path = "OC-YL";
+			sourceTree = "<group>";
+		};
+		77E14974202B06240011D4FD /* OC-YL */ = {
+			isa = PBXGroup;
+			children = (
+				77E1497B202B06670011D4FD /* YLImport.h */,
+				77E14975202B06450011D4FD /* YLCategorie */,
+				77E14979202B06450011D4FD /* YLUIKit */,
+			);
+			path = "OC-YL";
+			sourceTree = "<group>";
+		};
+		77E14975202B06450011D4FD /* YLCategorie */ = {
+			isa = PBXGroup;
+			children = (
+				77E14982202B08080011D4FD /* UIKit */,
+				77E1497D202B07D80011D4FD /* Foundation */,
+			);
+			path = YLCategorie;
+			sourceTree = "<group>";
+		};
+		77E14979202B06450011D4FD /* YLUIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YLUIKit;
+			sourceTree = "<group>";
+		};
+		77E1497D202B07D80011D4FD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				77E1497E202B07F40011D4FD /* NSString */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		77E1497E202B07F40011D4FD /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				77E1497F202B07F40011D4FD /* NSString+YLHash.h */,
+				77E14980202B07F40011D4FD /* NSString+YLHash.m */,
+				77E14987202B093F0011D4FD /* NSString+YLDrawing.h */,
+				77E14988202B09400011D4FD /* NSString+YLDrawing.m */,
+				77E1498A202B0E890011D4FD /* NSString+YLURLCode.h */,
+				77E1498B202B0E890011D4FD /* NSString+YLURLCode.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		77E14982202B08080011D4FD /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				77E14983202B08460011D4FD /* UIlabel */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		77E14983202B08460011D4FD /* UIlabel */ = {
+			isa = PBXGroup;
+			children = (
+				77E14984202B085E0011D4FD /* UILabel+YLContentInsets.h */,
+				77E14985202B085E0011D4FD /* UILabel+YLContentInsets.m */,
+			);
+			path = UIlabel;
 			sourceTree = "<group>";
 		};
 		8A3470D710603F89ACC2226E /* Frameworks */ = {
@@ -124,6 +204,7 @@
 		77E14901202ADC510011D4FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YL;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = melon;
 				TargetAttributes = {
@@ -220,9 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E14981202B07F40011D4FD /* NSString+YLHash.m in Sources */,
 				77E14911202ADC510011D4FD /* ViewController.m in Sources */,
+				77E14986202B085E0011D4FD /* UILabel+YLContentInsets.m in Sources */,
 				77E1491C202ADC510011D4FD /* main.m in Sources */,
+				77E1498C202B0E890011D4FD /* NSString+YLURLCode.m in Sources */,
 				77E1490E202ADC510011D4FD /* AppDelegate.m in Sources */,
+				77E14989202B09400011D4FD /* NSString+YLDrawing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "OC-YL/PrefixHeader.pch";
 				INFOPLIST_FILE = "OC-YL/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "melon.OC-YL";
@@ -372,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "OC-YL/PrefixHeader.pch";
 				INFOPLIST_FILE = "OC-YL/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "melon.OC-YL";

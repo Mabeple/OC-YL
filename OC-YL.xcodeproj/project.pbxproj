@@ -153,18 +153,18 @@
 		77E14982202B08080011D4FD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				77E14983202B08460011D4FD /* UIlabel */,
+				77E14983202B08460011D4FD /* UILabel */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		77E14983202B08460011D4FD /* UIlabel */ = {
+		77E14983202B08460011D4FD /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
 				77E14984202B085E0011D4FD /* UILabel+YLContentInsets.h */,
 				77E14985202B085E0011D4FD /* UILabel+YLContentInsets.m */,
 			);
-			path = UIlabel;
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 		8A3470D710603F89ACC2226E /* Frameworks */ = {

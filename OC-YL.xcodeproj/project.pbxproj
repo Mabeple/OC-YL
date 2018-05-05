@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014BAD6D209E61820008AADF /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 014BAD6B209E61820008AADF /* UIView+Frame.m */; };
 		05C921F424AD79880EAAC953 /* libPods-OC-YL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BE226D338F62B0EDF286D /* libPods-OC-YL.a */; };
 		77E1490E202ADC510011D4FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1490D202ADC510011D4FD /* AppDelegate.m */; };
 		77E14911202ADC510011D4FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14910202ADC510011D4FD /* ViewController.m */; };
@@ -14,14 +15,16 @@
 		77E14916202ADC510011D4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E14915202ADC510011D4FD /* Assets.xcassets */; };
 		77E14919202ADC510011D4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E14917202ADC510011D4FD /* LaunchScreen.storyboard */; };
 		77E1491C202ADC510011D4FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1491B202ADC510011D4FD /* main.m */; };
-		77E14981202B07F40011D4FD /* NSString+YLHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14980202B07F40011D4FD /* NSString+YLHash.m */; };
-		77E14986202B085E0011D4FD /* UILabel+YLContentInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14985202B085E0011D4FD /* UILabel+YLContentInsets.m */; };
-		77E14989202B09400011D4FD /* NSString+YLDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14988202B09400011D4FD /* NSString+YLDrawing.m */; };
-		77E1498C202B0E890011D4FD /* NSString+YLURLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1498B202B0E890011D4FD /* NSString+YLURLCode.m */; };
+		77E14981202B07F40011D4FD /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14980202B07F40011D4FD /* NSString+Hash.m */; };
+		77E14986202B085E0011D4FD /* UILabel+ContentInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14985202B085E0011D4FD /* UILabel+ContentInsets.m */; };
+		77E14989202B09400011D4FD /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14988202B09400011D4FD /* NSString+Size.m */; };
+		77E1498C202B0E890011D4FD /* NSString+URLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1498B202B0E890011D4FD /* NSString+URLCode.m */; };
 		77E14990202B168A0011D4FD /* YHWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1498F202B168A0011D4FD /* YHWaterFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		014BAD6B209E61820008AADF /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		014BAD6C209E61820008AADF /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		23168B0D4A4E80A7C16F6A84 /* Pods-OC-YL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC-YL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL.debug.xcconfig"; sourceTree = "<group>"; };
 		520BE226D338F62B0EDF286D /* libPods-OC-YL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC-YL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E14909202ADC510011D4FD /* OC-YL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OC-YL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,14 +39,14 @@
 		77E1491B202ADC510011D4FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77E1497B202B06670011D4FD /* YLImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLImport.h; sourceTree = "<group>"; };
 		77E1497C202B06D70011D4FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		77E1497F202B07F40011D4FD /* NSString+YLHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YLHash.h"; sourceTree = "<group>"; };
-		77E14980202B07F40011D4FD /* NSString+YLHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YLHash.m"; sourceTree = "<group>"; };
-		77E14984202B085E0011D4FD /* UILabel+YLContentInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YLContentInsets.h"; sourceTree = "<group>"; };
-		77E14985202B085E0011D4FD /* UILabel+YLContentInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YLContentInsets.m"; sourceTree = "<group>"; };
-		77E14987202B093F0011D4FD /* NSString+YLDrawing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YLDrawing.h"; sourceTree = "<group>"; };
-		77E14988202B09400011D4FD /* NSString+YLDrawing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YLDrawing.m"; sourceTree = "<group>"; };
-		77E1498A202B0E890011D4FD /* NSString+YLURLCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YLURLCode.h"; sourceTree = "<group>"; };
-		77E1498B202B0E890011D4FD /* NSString+YLURLCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YLURLCode.m"; sourceTree = "<group>"; };
+		77E1497F202B07F40011D4FD /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		77E14980202B07F40011D4FD /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		77E14984202B085E0011D4FD /* UILabel+ContentInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ContentInsets.h"; sourceTree = "<group>"; };
+		77E14985202B085E0011D4FD /* UILabel+ContentInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ContentInsets.m"; sourceTree = "<group>"; };
+		77E14987202B093F0011D4FD /* NSString+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		77E14988202B09400011D4FD /* NSString+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		77E1498A202B0E890011D4FD /* NSString+URLCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URLCode.h"; sourceTree = "<group>"; };
+		77E1498B202B0E890011D4FD /* NSString+URLCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLCode.m"; sourceTree = "<group>"; };
 		77E1498E202B168A0011D4FD /* YHWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWaterFlowLayout.h; sourceTree = "<group>"; };
 		77E1498F202B168A0011D4FD /* YHWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWaterFlowLayout.m; sourceTree = "<group>"; };
 		B5C178AAEB14C33C18CBD17E /* Pods-OC-YL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC-YL.release.xcconfig"; path = "Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		014BAD6A209E61820008AADF /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				014BAD6B209E61820008AADF /* UIView+Frame.m */,
+				014BAD6C209E61820008AADF /* UIView+Frame.h */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		028FA98A99C1DFA0D514C4CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,12 +156,12 @@
 		77E1497E202B07F40011D4FD /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				77E1497F202B07F40011D4FD /* NSString+YLHash.h */,
-				77E14980202B07F40011D4FD /* NSString+YLHash.m */,
-				77E14987202B093F0011D4FD /* NSString+YLDrawing.h */,
-				77E14988202B09400011D4FD /* NSString+YLDrawing.m */,
-				77E1498A202B0E890011D4FD /* NSString+YLURLCode.h */,
-				77E1498B202B0E890011D4FD /* NSString+YLURLCode.m */,
+				77E1497F202B07F40011D4FD /* NSString+Hash.h */,
+				77E14980202B07F40011D4FD /* NSString+Hash.m */,
+				77E14987202B093F0011D4FD /* NSString+Size.h */,
+				77E14988202B09400011D4FD /* NSString+Size.m */,
+				77E1498A202B0E890011D4FD /* NSString+URLCode.h */,
+				77E1498B202B0E890011D4FD /* NSString+URLCode.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -157,6 +169,7 @@
 		77E14982202B08080011D4FD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				014BAD6A209E61820008AADF /* UIView */,
 				77E14983202B08460011D4FD /* UILabel */,
 			);
 			path = UIKit;
@@ -165,8 +178,8 @@
 		77E14983202B08460011D4FD /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				77E14984202B085E0011D4FD /* UILabel+YLContentInsets.h */,
-				77E14985202B085E0011D4FD /* UILabel+YLContentInsets.m */,
+				77E14984202B085E0011D4FD /* UILabel+ContentInsets.h */,
+				77E14985202B085E0011D4FD /* UILabel+ContentInsets.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -199,8 +212,6 @@
 				77E14905202ADC510011D4FD /* Sources */,
 				77E14906202ADC510011D4FD /* Frameworks */,
 				77E14907202ADC510011D4FD /* Resources */,
-				AEA928B5C07B429652194370 /* [CP] Embed Pods Frameworks */,
-				AA35CD0FE3922C0F6991B060 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,7 +229,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = YL;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = melon;
 				TargetAttributes = {
 					77E14908202ADC510011D4FD = {
@@ -259,36 +270,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AA35CD0FE3922C0F6991B060 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AEA928B5C07B429652194370 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CADE2AB940B4A541479D9177 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,13 +296,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				77E14990202B168A0011D4FD /* YHWaterFlowLayout.m in Sources */,
-				77E14981202B07F40011D4FD /* NSString+YLHash.m in Sources */,
+				77E14981202B07F40011D4FD /* NSString+Hash.m in Sources */,
 				77E14911202ADC510011D4FD /* ViewController.m in Sources */,
-				77E14986202B085E0011D4FD /* UILabel+YLContentInsets.m in Sources */,
+				77E14986202B085E0011D4FD /* UILabel+ContentInsets.m in Sources */,
+				014BAD6D209E61820008AADF /* UIView+Frame.m in Sources */,
 				77E1491C202ADC510011D4FD /* main.m in Sources */,
-				77E1498C202B0E890011D4FD /* NSString+YLURLCode.m in Sources */,
+				77E1498C202B0E890011D4FD /* NSString+URLCode.m in Sources */,
 				77E1490E202ADC510011D4FD /* AppDelegate.m in Sources */,
-				77E14989202B09400011D4FD /* NSString+YLDrawing.m in Sources */,
+				77E14989202B09400011D4FD /* NSString+Size.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +343,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -368,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -416,6 +400,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -423,6 +408,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -459,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "OC-YL/PrefixHeader.pch";
 				INFOPLIST_FILE = "OC-YL/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "melon.OC-YL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "OC-YL/PrefixHeader.pch";
 				INFOPLIST_FILE = "OC-YL/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "melon.OC-YL";
 				PRODUCT_NAME = "$(TARGET_NAME)";

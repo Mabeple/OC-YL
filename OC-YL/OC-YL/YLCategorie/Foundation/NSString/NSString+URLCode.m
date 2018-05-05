@@ -6,10 +6,11 @@
 //  Copyright © 2018年 melon. All rights reserved.
 //
 
-#import "NSString+YLURLCode.h"
+#import "NSString+URLCode.h"
 
-@implementation NSString (YLURLCode)
-- (NSString *)stringByURLEncode {
+@implementation NSString (URLCode)
+- (NSString *)stringByURLEncode
+{
     if ([self respondsToSelector:@selector(stringByAddingPercentEncodingWithAllowedCharacters:)]) {
         /**
          AFNetworking/AFURLRequestSerialization.m
@@ -61,7 +62,8 @@
 #pragma clang diagnostic pop
     }
 }
-- (NSString *)stringByURLDecode {
+- (NSString *)stringByURLDecode
+{
     if ([self respondsToSelector:@selector(stringByRemovingPercentEncoding)]) {
         return [self stringByRemovingPercentEncoding];
     } else {
@@ -80,7 +82,8 @@
 #pragma clang diagnostic pop
     }
 }
-- (NSString *)stringByEscapingHTML {
+- (NSString *)stringByEscapingHTML
+{
     NSUInteger len = self.length;
     if (!len) return self;
     

@@ -6,7 +6,7 @@
 //  Copyright © 2018年 melon. All rights reserved.
 //
 
-#import "UILabel+YLContentInsets.h"
+#import "UILabel+ContentInsets.h"
 #import <objc/runtime.h>
 
 /// 获取UIEdgeInsets在水平方向上的值

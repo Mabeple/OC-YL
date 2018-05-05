@@ -1,5 +1,5 @@
 //
-//  NSString+YLDrawing.h
+//  NSString+Size.h
 //  OC-YL
 //
 //  Created by melon on 2018/2/7.
@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@interface NSString (YLDrawing)
+@interface NSString (Size)
+- (CGSize)yl_sizeForFont:(UIFont *)font maxSize:(CGSize)size;
 - (CGSize)yl_sizeForFont:(UIFont *)font maxSize:(CGSize)size mode:(NSLineBreakMode)lineBreakMode;
 - (CGFloat)yl_widthForFont:(UIFont *)font;
 - (CGFloat)yl_heightForFont:(UIFont *)font maxWidth:(CGFloat)width;

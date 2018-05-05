@@ -1,5 +1,5 @@
 //
-//  UILabel+YLInsetsLabel.h
+//  UILabel+ContentInsets.h
 //  KwaiUp
 //
 //  Created by melon on 2018/1/24.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UILabel (YLContentInsets)
+@interface UILabel (ContentInsets)
 @property (nonatomic, assign) UIEdgeInsets yl_contentInsets;
 @end

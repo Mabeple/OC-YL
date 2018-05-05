@@ -6,7 +6,7 @@
 //  Copyright © 2018年 melon. All rights reserved.
 //
 
-#import "NSString+YLHash.h"
+#import "NSString+Hash.h"
 #include <CommonCrypto/CommonCrypto.h>
 @implementation NSString (YLHash)
 

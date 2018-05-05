@@ -9,6 +9,7 @@
 #ifndef YLImport_h
 #define YLImport_h
 
-#import "NSString+YLHash.h"
-
+#import "NSString+Hash.h"
+#import "NSString+Size.h"
+#import "NSString+URLCode.h"
 #endif /* YLImport_h */

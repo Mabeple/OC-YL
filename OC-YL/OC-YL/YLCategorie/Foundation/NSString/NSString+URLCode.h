@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (YLURLCode)
+@interface NSString (URLCode)
 /**
  URL encode a string in utf-8.
  @return the encoded string.

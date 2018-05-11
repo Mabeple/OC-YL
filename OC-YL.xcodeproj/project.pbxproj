@@ -20,6 +20,7 @@
 		77ACD1AD20A5D78E003EFC78 /* YLHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD19E20A5D78E003EFC78 /* YLHUDManager.m */; };
 		77ACD1AE20A5D78E003EFC78 /* YLUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD1A120A5D78E003EFC78 /* YLUI.m */; };
 		77ACD1AF20A5D78E003EFC78 /* YLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD1A420A5D78E003EFC78 /* YLWebViewController.m */; };
+		77ACD1B320A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD1B220A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.m */; };
 		77E1490E202ADC510011D4FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1490D202ADC510011D4FD /* AppDelegate.m */; };
 		77E14911202ADC510011D4FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14910202ADC510011D4FD /* ViewController.m */; };
 		77E14914202ADC510011D4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E14912202ADC510011D4FD /* Main.storyboard */; };
@@ -62,6 +63,8 @@
 		77ACD1A120A5D78E003EFC78 /* YLUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLUI.m; sourceTree = "<group>"; };
 		77ACD1A320A5D78E003EFC78 /* YLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebViewController.h; sourceTree = "<group>"; };
 		77ACD1A420A5D78E003EFC78 /* YLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWebViewController.m; sourceTree = "<group>"; };
+		77ACD1B120A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		77ACD1B220A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		77E14909202ADC510011D4FD /* OC-YL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OC-YL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E1490C202ADC510011D4FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77E1490D202ADC510011D4FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -260,6 +263,15 @@
 			path = YLWebController;
 			sourceTree = "<group>";
 		};
+		77ACD1B020A5D7DC003EFC78 /* ZLCollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD1B120A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.h */,
+				77ACD1B220A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.m */,
+			);
+			path = ZLCollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
 		77E14900202ADC510011D4FD = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +293,7 @@
 		77E1490B202ADC510011D4FD /* OC-YL */ = {
 			isa = PBXGroup;
 			children = (
+				77ACD1B020A5D7DC003EFC78 /* ZLCollectionViewFlowLayout */,
 				77ACD17E20A5D74A003EFC78 /* New */,
 				77E14974202B06240011D4FD /* OC-YL */,
 				77E1490C202ADC510011D4FD /* AppDelegate.h */,
@@ -520,6 +533,7 @@
 				77ACD1A720A5D78E003EFC78 /* NSString+URLCode.m in Sources */,
 				77ACD1A820A5D78E003EFC78 /* UIColor+HEX.m in Sources */,
 				77ACD1AB20A5D78E003EFC78 /* UIView+Xib.m in Sources */,
+				77ACD1B320A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.m in Sources */,
 				77E14989202B09400011D4FD /* NSString+Size.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

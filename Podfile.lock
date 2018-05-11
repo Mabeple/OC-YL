@@ -1,42 +1,114 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - SDWebImage (4.2.2):
-    - SDWebImage/Core (= 4.2.2)
-  - SDWebImage/Core (4.2.2)
+  - AutoScrollLabel (0.4.3)
+  - AvoidCrash (2.5.2)
+  - Bugly (2.4.8)
+  - CLImageEditor (0.2.2):
+    - CLImageEditor/Core (= 0.2.2)
+  - CLImageEditor/Core (0.2.2)
+  - CYTabBar (1.6.7)
+  - DZNEmptyDataSet (1.8.1)
+  - FBRetainCycleDetector (0.1.4)
+  - IQKeyboardManager (6.0.2)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.3)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
+  - QIYU_iOS_SDK (3.11.6)
+  - Reachability (3.2)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - SensorsAnalyticsSDK/core (1.10.0)
+  - SensorsAnalyticsSDK/IDFA (1.10.0):
+    - SensorsAnalyticsSDK/core
+  - WRNavigationBar (1.2.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.1.0)
+  - AFNetworking (~> 3.2.0)
+  - AutoScrollLabel (~> 0.4.3)
+  - AvoidCrash (~> 2.5.2)
+  - Bugly (~> 2.4.8)
+  - CLImageEditor (~> 0.2.2)
+  - CYTabBar (~> 1.6.7)
+  - DZNEmptyDataSet (~> 1.8.1)
+  - IQKeyboardManager (~> 6.0.2)
+  - Masonry (~> 1.1.0)
+  - MBProgressHUD (~> 1.1.0)
+  - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.15.3)
+  - MLeaksFinder (~> 1.0.0)
+  - QIYU_iOS_SDK (~> 3.11.6)
+  - Reachability (~> 3.2)
   - SDWebImage (~> 4.2.2)
+  - SensorsAnalyticsSDK/IDFA
+  - WRNavigationBar (~> 1.2.0)
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - AutoScrollLabel
+    - AvoidCrash
+    - Bugly
+    - CLImageEditor
+    - CYTabBar
+    - DZNEmptyDataSet
+    - FBRetainCycleDetector
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - MLeaksFinder
+    - QIYU_iOS_SDK
+    - Reachability
     - SDWebImage
+    - SensorsAnalyticsSDK
+    - WRNavigationBar
     - YYKit
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AutoScrollLabel: bee53a1d4532569b49cbecaf9b80ca003bed3767
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
+  Bugly: da3c02408c14838d498429320545a8e439392978
+  CLImageEditor: 34199b39c994af44f3f3aae6f6dcccb7ef8b75aa
+  CYTabBar: d1ce27d18bcd721a34a3db4237d8b46c2833ad47
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  IQKeyboardManager: c49d59e358aeeffaa0280aa305093c2b194d2607
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
+  QIYU_iOS_SDK: 5025faffbb98d10dce489a21b4e792c0b25c94be
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  SensorsAnalyticsSDK: 8d923fb8abd1519c00890a743e505b62738acc5c
+  WRNavigationBar: dc952230effbb646785f962587caaac06c60f229
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 96fc0c0830c610d90249e70066e501c740961a49
+PODFILE CHECKSUM: f1646cdf6aac085262a700fdd11eb4336f4b05f2
 
 COCOAPODS: 1.5.0

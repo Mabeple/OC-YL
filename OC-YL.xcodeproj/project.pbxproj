@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		014BAD6D209E61820008AADF /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 014BAD6B209E61820008AADF /* UIView+Frame.m */; };
 		05C921F424AD79880EAAC953 /* libPods-OC-YL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BE226D338F62B0EDF286D /* libPods-OC-YL.a */; };
+		77ACD1A520A5D78E003EFC78 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD18420A5D78E003EFC78 /* NSString+Hash.m */; };
+		77ACD1A620A5D78E003EFC78 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD18620A5D78E003EFC78 /* NSString+Size.m */; };
+		77ACD1A720A5D78E003EFC78 /* NSString+URLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD18820A5D78E003EFC78 /* NSString+URLCode.m */; };
+		77ACD1A820A5D78E003EFC78 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD18C20A5D78E003EFC78 /* UIColor+HEX.m */; };
+		77ACD1A920A5D78E003EFC78 /* UILabel+ContentInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD18F20A5D78E003EFC78 /* UILabel+ContentInsets.m */; };
+		77ACD1AA20A5D78E003EFC78 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD19220A5D78E003EFC78 /* UIView+Frame.m */; };
+		77ACD1AB20A5D78E003EFC78 /* UIView+Xib.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD19420A5D78E003EFC78 /* UIView+Xib.m */; };
+		77ACD1AC20A5D78E003EFC78 /* YHWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD19B20A5D78E003EFC78 /* YHWaterFlowLayout.m */; };
+		77ACD1AD20A5D78E003EFC78 /* YLHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD19E20A5D78E003EFC78 /* YLHUDManager.m */; };
+		77ACD1AE20A5D78E003EFC78 /* YLUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD1A120A5D78E003EFC78 /* YLUI.m */; };
+		77ACD1AF20A5D78E003EFC78 /* YLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD1A420A5D78E003EFC78 /* YLWebViewController.m */; };
 		77E1490E202ADC510011D4FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1490D202ADC510011D4FD /* AppDelegate.m */; };
 		77E14911202ADC510011D4FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E14910202ADC510011D4FD /* ViewController.m */; };
 		77E14914202ADC510011D4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E14912202ADC510011D4FD /* Main.storyboard */; };
@@ -27,6 +38,30 @@
 		014BAD6C209E61820008AADF /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		23168B0D4A4E80A7C16F6A84 /* Pods-OC-YL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC-YL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL.debug.xcconfig"; sourceTree = "<group>"; };
 		520BE226D338F62B0EDF286D /* libPods-OC-YL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC-YL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77ACD18320A5D78E003EFC78 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		77ACD18420A5D78E003EFC78 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		77ACD18520A5D78E003EFC78 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		77ACD18620A5D78E003EFC78 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		77ACD18720A5D78E003EFC78 /* NSString+URLCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLCode.h"; sourceTree = "<group>"; };
+		77ACD18820A5D78E003EFC78 /* NSString+URLCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLCode.m"; sourceTree = "<group>"; };
+		77ACD18B20A5D78E003EFC78 /* UIColor+HEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEX.h"; sourceTree = "<group>"; };
+		77ACD18C20A5D78E003EFC78 /* UIColor+HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
+		77ACD18E20A5D78E003EFC78 /* UILabel+ContentInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ContentInsets.h"; sourceTree = "<group>"; };
+		77ACD18F20A5D78E003EFC78 /* UILabel+ContentInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ContentInsets.m"; sourceTree = "<group>"; };
+		77ACD19120A5D78E003EFC78 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		77ACD19220A5D78E003EFC78 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		77ACD19320A5D78E003EFC78 /* UIView+Xib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Xib.h"; sourceTree = "<group>"; };
+		77ACD19420A5D78E003EFC78 /* UIView+Xib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Xib.m"; sourceTree = "<group>"; };
+		77ACD19520A5D78E003EFC78 /* YLImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImport.h; sourceTree = "<group>"; };
+		77ACD19720A5D78E003EFC78 /* YLMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMacroDefine.h; sourceTree = "<group>"; };
+		77ACD19A20A5D78E003EFC78 /* YHWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWaterFlowLayout.h; sourceTree = "<group>"; };
+		77ACD19B20A5D78E003EFC78 /* YHWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWaterFlowLayout.m; sourceTree = "<group>"; };
+		77ACD19D20A5D78E003EFC78 /* YLHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHUDManager.h; sourceTree = "<group>"; };
+		77ACD19E20A5D78E003EFC78 /* YLHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHUDManager.m; sourceTree = "<group>"; };
+		77ACD1A020A5D78E003EFC78 /* YLUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLUI.h; sourceTree = "<group>"; };
+		77ACD1A120A5D78E003EFC78 /* YLUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLUI.m; sourceTree = "<group>"; };
+		77ACD1A320A5D78E003EFC78 /* YLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebViewController.h; sourceTree = "<group>"; };
+		77ACD1A420A5D78E003EFC78 /* YLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWebViewController.m; sourceTree = "<group>"; };
 		77E14909202ADC510011D4FD /* OC-YL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OC-YL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E1490C202ADC510011D4FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77E1490D202ADC510011D4FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +117,149 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		77ACD17E20A5D74A003EFC78 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD17F20A5D78E003EFC78 /* OC-YL */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		77ACD17F20A5D78E003EFC78 /* OC-YL */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD18020A5D78E003EFC78 /* YLCategories */,
+				77ACD19520A5D78E003EFC78 /* YLImport.h */,
+				77ACD19620A5D78E003EFC78 /* YLMacroDefine */,
+				77ACD19820A5D78E003EFC78 /* YLUIKit */,
+			);
+			path = "OC-YL";
+			sourceTree = "<group>";
+		};
+		77ACD18020A5D78E003EFC78 /* YLCategories */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD18120A5D78E003EFC78 /* Foundation */,
+				77ACD18920A5D78E003EFC78 /* UIKit */,
+			);
+			path = YLCategories;
+			sourceTree = "<group>";
+		};
+		77ACD18120A5D78E003EFC78 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD18220A5D78E003EFC78 /* NSString */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		77ACD18220A5D78E003EFC78 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD18320A5D78E003EFC78 /* NSString+Hash.h */,
+				77ACD18420A5D78E003EFC78 /* NSString+Hash.m */,
+				77ACD18520A5D78E003EFC78 /* NSString+Size.h */,
+				77ACD18620A5D78E003EFC78 /* NSString+Size.m */,
+				77ACD18720A5D78E003EFC78 /* NSString+URLCode.h */,
+				77ACD18820A5D78E003EFC78 /* NSString+URLCode.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		77ACD18920A5D78E003EFC78 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD18A20A5D78E003EFC78 /* UIColor */,
+				77ACD18D20A5D78E003EFC78 /* UIlabel */,
+				77ACD19020A5D78E003EFC78 /* UIView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		77ACD18A20A5D78E003EFC78 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD18B20A5D78E003EFC78 /* UIColor+HEX.h */,
+				77ACD18C20A5D78E003EFC78 /* UIColor+HEX.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		77ACD18D20A5D78E003EFC78 /* UIlabel */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD18E20A5D78E003EFC78 /* UILabel+ContentInsets.h */,
+				77ACD18F20A5D78E003EFC78 /* UILabel+ContentInsets.m */,
+			);
+			path = UIlabel;
+			sourceTree = "<group>";
+		};
+		77ACD19020A5D78E003EFC78 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD19120A5D78E003EFC78 /* UIView+Frame.h */,
+				77ACD19220A5D78E003EFC78 /* UIView+Frame.m */,
+				77ACD19320A5D78E003EFC78 /* UIView+Xib.h */,
+				77ACD19420A5D78E003EFC78 /* UIView+Xib.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		77ACD19620A5D78E003EFC78 /* YLMacroDefine */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD19720A5D78E003EFC78 /* YLMacroDefine.h */,
+			);
+			path = YLMacroDefine;
+			sourceTree = "<group>";
+		};
+		77ACD19820A5D78E003EFC78 /* YLUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD19920A5D78E003EFC78 /* YHWaterFlowLayout */,
+				77ACD19C20A5D78E003EFC78 /* YLHUDManager */,
+				77ACD19F20A5D78E003EFC78 /* YLUI */,
+				77ACD1A220A5D78E003EFC78 /* YLWebController */,
+			);
+			path = YLUIKit;
+			sourceTree = "<group>";
+		};
+		77ACD19920A5D78E003EFC78 /* YHWaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD19A20A5D78E003EFC78 /* YHWaterFlowLayout.h */,
+				77ACD19B20A5D78E003EFC78 /* YHWaterFlowLayout.m */,
+			);
+			path = YHWaterFlowLayout;
+			sourceTree = "<group>";
+		};
+		77ACD19C20A5D78E003EFC78 /* YLHUDManager */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD19D20A5D78E003EFC78 /* YLHUDManager.h */,
+				77ACD19E20A5D78E003EFC78 /* YLHUDManager.m */,
+			);
+			path = YLHUDManager;
+			sourceTree = "<group>";
+		};
+		77ACD19F20A5D78E003EFC78 /* YLUI */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD1A020A5D78E003EFC78 /* YLUI.h */,
+				77ACD1A120A5D78E003EFC78 /* YLUI.m */,
+			);
+			path = YLUI;
+			sourceTree = "<group>";
+		};
+		77ACD1A220A5D78E003EFC78 /* YLWebController */ = {
+			isa = PBXGroup;
+			children = (
+				77ACD1A320A5D78E003EFC78 /* YLWebViewController.h */,
+				77ACD1A420A5D78E003EFC78 /* YLWebViewController.m */,
+			);
+			path = YLWebController;
+			sourceTree = "<group>";
+		};
 		77E14900202ADC510011D4FD = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +281,7 @@
 		77E1490B202ADC510011D4FD /* OC-YL */ = {
 			isa = PBXGroup;
 			children = (
+				77ACD17E20A5D74A003EFC78 /* New */,
 				77E14974202B06240011D4FD /* OC-YL */,
 				77E1490C202ADC510011D4FD /* AppDelegate.h */,
 				77E1490D202ADC510011D4FD /* AppDelegate.m */,
@@ -212,6 +391,7 @@
 				77E14905202ADC510011D4FD /* Sources */,
 				77E14906202ADC510011D4FD /* Frameworks */,
 				77E14907202ADC510011D4FD /* Resources */,
+				AB7AC574AC191A7D24864924 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +450,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AB7AC574AC191A7D24864924 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL-resources.sh",
+				"${PODS_ROOT}/CLImageEditor/CLImageEditor/CLImageEditor.bundle",
+				"${PODS_ROOT}/CYTabBar/CYTabBar/CYTabBar.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/QIYU_iOS_SDK/SDK/QYResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CLImageEditor.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CYTabBar.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QYResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CADE2AB940B4A541479D9177 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,13 +502,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				77E14990202B168A0011D4FD /* YHWaterFlowLayout.m in Sources */,
+				77ACD1AC20A5D78E003EFC78 /* YHWaterFlowLayout.m in Sources */,
 				77E14981202B07F40011D4FD /* NSString+Hash.m in Sources */,
+				77ACD1AE20A5D78E003EFC78 /* YLUI.m in Sources */,
 				77E14911202ADC510011D4FD /* ViewController.m in Sources */,
+				77ACD1AA20A5D78E003EFC78 /* UIView+Frame.m in Sources */,
+				77ACD1A620A5D78E003EFC78 /* NSString+Size.m in Sources */,
+				77ACD1A920A5D78E003EFC78 /* UILabel+ContentInsets.m in Sources */,
+				77ACD1A520A5D78E003EFC78 /* NSString+Hash.m in Sources */,
+				77ACD1AD20A5D78E003EFC78 /* YLHUDManager.m in Sources */,
+				77ACD1AF20A5D78E003EFC78 /* YLWebViewController.m in Sources */,
 				77E14986202B085E0011D4FD /* UILabel+ContentInsets.m in Sources */,
 				014BAD6D209E61820008AADF /* UIView+Frame.m in Sources */,
 				77E1491C202ADC510011D4FD /* main.m in Sources */,
 				77E1498C202B0E890011D4FD /* NSString+URLCode.m in Sources */,
 				77E1490E202ADC510011D4FD /* AppDelegate.m in Sources */,
+				77ACD1A720A5D78E003EFC78 /* NSString+URLCode.m in Sources */,
+				77ACD1A820A5D78E003EFC78 /* UIColor+HEX.m in Sources */,
+				77ACD1AB20A5D78E003EFC78 /* UIView+Xib.m in Sources */,
 				77E14989202B09400011D4FD /* NSString+Size.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

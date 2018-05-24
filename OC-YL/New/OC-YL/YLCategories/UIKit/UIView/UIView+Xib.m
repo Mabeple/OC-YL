@@ -9,7 +9,7 @@
 #import "UIView+Xib.h"
 
 @implementation UIView (Xib)
-+ (instancetype)viewFromXib
++ (instancetype)yl_viewFromXib
 {
     return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil].firstObject;
 }

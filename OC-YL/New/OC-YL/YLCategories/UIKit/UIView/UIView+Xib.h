@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (Xib)
-+ (instancetype)viewFromXib;
+
+/**
+ load from xib
+
+ @return view
+ */
++ (instancetype)yl_viewFromXib;
 @end

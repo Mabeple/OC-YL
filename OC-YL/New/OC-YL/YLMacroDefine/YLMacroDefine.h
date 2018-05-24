@@ -20,17 +20,17 @@ CGSizeEqualToSize(CGSizeMake(1125, 2436), \
 //屏幕 宽度
 #define kScreenHeight                  ([UIScreen mainScreen].bounds.size.height)
 //Navbar Safety Top Insets
-#define kNavbarSafeTopInsets           (IphoneX ? 24.0f : 0)
+#define kSafetyAreaTopInsets           (IphoneX ? 24.0f : 0)
 //Tabbar Safety Bottom Insets
-#define kTabbarSafeBottomInsets        (IphoneX ? 34.0f : 0)
+#define kSafetyAreaBottomInsets        (IphoneX ? 34.0f : 0)
 //Tabbar Default Height
 #define kDefaultTabBarHeight           (49.f)
 //Navbar Default Height
 #define kDefaultNavHeight              (64.f)
 //Tabbar Normal Height
-#define kTabbarHeight                  (IphoneX?kTabbarSafeBottomInsets+kDefaultTabBarHeight:kDefaultTabBarHeight)
+#define kTabbarHeight                  (IphoneX?kSafetyAreaBottomInsets+kDefaultTabBarHeight:kDefaultTabBarHeight)
 //NaviBar Normal Height
-#define kNaviBarHeight                 (IphoneX?kNavbarSafeTopInsets+kDefaultNavHeight:kDefaultNavHeight)
+#define kNaviBarHeight                 (IphoneX?kSafetyAreaTopInsets+kDefaultNavHeight:kDefaultNavHeight)
 
 
 #pragma mark - Sysytem default

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		014BAD6D209E61820008AADF /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 014BAD6B209E61820008AADF /* UIView+Frame.m */; };
+		017A340720B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A340620B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m */; };
+		017A340A20B6EDF8003DB65B /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A340920B6EDF8003DB65B /* UIImageView+CornerRadius.m */; };
+		017A340D20B70637003DB65B /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A340C20B70637003DB65B /* UIView+CornerRadius.m */; };
+		017A341A20B70F9E003DB65B /* YLPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A341920B70F9E003DB65B /* YLPlaceHolderTextView.m */; };
 		05C921F424AD79880EAAC953 /* libPods-OC-YL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BE226D338F62B0EDF286D /* libPods-OC-YL.a */; };
 		77ACD1A520A5D78E003EFC78 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD18420A5D78E003EFC78 /* NSString+Hash.m */; };
 		77ACD1A620A5D78E003EFC78 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD18620A5D78E003EFC78 /* NSString+Size.m */; };
@@ -37,6 +41,14 @@
 /* Begin PBXFileReference section */
 		014BAD6B209E61820008AADF /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		014BAD6C209E61820008AADF /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		017A340520B6ED40003DB65B /* UIView+XWAddForRoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XWAddForRoundedCorner.h"; sourceTree = "<group>"; };
+		017A340620B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XWAddForRoundedCorner.m"; sourceTree = "<group>"; };
+		017A340820B6EDF8003DB65B /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		017A340920B6EDF8003DB65B /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		017A340B20B70637003DB65B /* UIView+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
+		017A340C20B70637003DB65B /* UIView+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
+		017A341820B70F9E003DB65B /* YLPlaceHolderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPlaceHolderTextView.h; sourceTree = "<group>"; };
+		017A341920B70F9E003DB65B /* YLPlaceHolderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPlaceHolderTextView.m; sourceTree = "<group>"; };
 		23168B0D4A4E80A7C16F6A84 /* Pods-OC-YL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC-YL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL.debug.xcconfig"; sourceTree = "<group>"; };
 		520BE226D338F62B0EDF286D /* libPods-OC-YL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC-YL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77ACD18320A5D78E003EFC78 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
@@ -109,6 +121,15 @@
 				014BAD6C209E61820008AADF /* UIView+Frame.h */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		017A341720B70F6A003DB65B /* YLPlaceHolderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				017A341820B70F9E003DB65B /* YLPlaceHolderTextView.h */,
+				017A341920B70F9E003DB65B /* YLPlaceHolderTextView.m */,
+			);
+			path = YLPlaceHolderTextView;
 			sourceTree = "<group>";
 		};
 		028FA98A99C1DFA0D514C4CF /* Pods */ = {
@@ -204,6 +225,8 @@
 				77ACD19220A5D78E003EFC78 /* UIView+Frame.m */,
 				77ACD19320A5D78E003EFC78 /* UIView+Xib.h */,
 				77ACD19420A5D78E003EFC78 /* UIView+Xib.m */,
+				017A340B20B70637003DB65B /* UIView+CornerRadius.h */,
+				017A340C20B70637003DB65B /* UIView+CornerRadius.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -219,6 +242,7 @@
 		77ACD19820A5D78E003EFC78 /* YLUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				017A341720B70F6A003DB65B /* YLPlaceHolderTextView */,
 				77ACD19920A5D78E003EFC78 /* YHWaterFlowLayout */,
 				77ACD19C20A5D78E003EFC78 /* YLHUDManager */,
 				77ACD19F20A5D78E003EFC78 /* YLUI */,
@@ -266,8 +290,12 @@
 		77ACD1B020A5D7DC003EFC78 /* ZLCollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				017A340520B6ED40003DB65B /* UIView+XWAddForRoundedCorner.h */,
+				017A340620B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m */,
 				77ACD1B120A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.h */,
 				77ACD1B220A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.m */,
+				017A340820B6EDF8003DB65B /* UIImageView+CornerRadius.h */,
+				017A340920B6EDF8003DB65B /* UIImageView+CornerRadius.m */,
 			);
 			path = ZLCollectionViewFlowLayout;
 			sourceTree = "<group>";
@@ -516,15 +544,19 @@
 			files = (
 				77E14990202B168A0011D4FD /* YHWaterFlowLayout.m in Sources */,
 				77ACD1AC20A5D78E003EFC78 /* YHWaterFlowLayout.m in Sources */,
+				017A341A20B70F9E003DB65B /* YLPlaceHolderTextView.m in Sources */,
 				77E14981202B07F40011D4FD /* NSString+Hash.m in Sources */,
 				77ACD1AE20A5D78E003EFC78 /* YLUI.m in Sources */,
 				77E14911202ADC510011D4FD /* ViewController.m in Sources */,
 				77ACD1AA20A5D78E003EFC78 /* UIView+Frame.m in Sources */,
 				77ACD1A620A5D78E003EFC78 /* NSString+Size.m in Sources */,
+				017A340A20B6EDF8003DB65B /* UIImageView+CornerRadius.m in Sources */,
 				77ACD1A920A5D78E003EFC78 /* UILabel+ContentInsets.m in Sources */,
+				017A340720B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m in Sources */,
 				77ACD1A520A5D78E003EFC78 /* NSString+Hash.m in Sources */,
 				77ACD1AD20A5D78E003EFC78 /* YLHUDManager.m in Sources */,
 				77ACD1AF20A5D78E003EFC78 /* YLWebViewController.m in Sources */,
+				017A340D20B70637003DB65B /* UIView+CornerRadius.m in Sources */,
 				77E14986202B085E0011D4FD /* UILabel+ContentInsets.m in Sources */,
 				014BAD6D209E61820008AADF /* UIView+Frame.m in Sources */,
 				77E1491C202ADC510011D4FD /* main.m in Sources */,

@@ -6,9 +6,9 @@
 //  Copyright © 2017年 couba. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface YLWebViewController : BaseViewController
+@interface YLWebViewController : UIViewController
 @property (nonatomic, copy) NSString *htmlStr;
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, copy) NSString *localFile;

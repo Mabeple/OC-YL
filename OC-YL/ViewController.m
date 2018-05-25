@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
-
+#import "YLImport.h"
+#import "NSObject+JKReflection.h"
+#import "YLPlaceHolderTextView.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btn;
+@property (weak, nonatomic) IBOutlet UITextField *textf;
+@property (weak, nonatomic) IBOutlet YLPlaceHolderTextView *textView;
 
 @end
 
@@ -16,11 +21,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",[@"123" yl_md5]);
-    NSString *str = @"幅度为范文芳违反违反为范围违反";
-    CGSize size = [str yl_sizeForFont:[UIFont systemFontOfSize:20] maxSize:CGSizeMake(100, 200)];
+//    [self jk_version];
+//    DLog(@"%@",[@"dqwd" yl_md5]);
+//    DLog(@"%f",[@"dqwd" yl_sizeForFont:[UIFont systemFontOfSize:15]].height);
+//    DLog(@"%@",[aa yl_propertyKeys]);
+//    DLog(@"%@",[aa jk_propertyKeys]);
+    self.textf.yl_maxLength = 5;
+    self.textView.yl_maxLength = 3;
+//    self.btn.yl_cornerRadius = 5;
+//    self.btn.layer.cornerRadius = 5;
+    [self.btn yl_shadowWithColor:[UIColor blackColor] offset:CGSizeMake(3, 3) opacity:0.3 radius:3];
     
-    NSLog(@"%@",NSStringFromCGSize(size));
+//    [self.btn yl_shadowWithCornerRadius:5 color:[UIColor blackColor] offset:CGSizeMake(3, 5) opacity:0.3 radius:3];
+//    - (void)yl_presentStoreKitItemWithIdentifier:(NSInteger)itemIdentifier;
+//
+//    + (NSURL *)yl_appURLForIdentifier:(NSInteger)identifier;
+//
+//
+//    + (void)yl_openAppReviewURLForIdentifier:(NSInteger)identifier;
+//
+//    + (BOOL)yl_containsITunesURLString:(NSString*)URLString;
+//    + (NSInteger)yl_IDFromITunesURL:(NSString*)URLString;
+    [self.btn yl_touchUpInside:^{
+        [self yl_presentStoreKitItemWithIdentifier:1252929009];
+    }];
 }
 
 

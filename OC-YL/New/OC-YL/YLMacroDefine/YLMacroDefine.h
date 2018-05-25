@@ -20,17 +20,17 @@ CGSizeEqualToSize(CGSizeMake(1125, 2436), \
 //屏幕 宽度
 #define kScreenHeight                  ([UIScreen mainScreen].bounds.size.height)
 //Navbar Safety Top Insets
-#define kSafetyAreaTopInsets           (IphoneX ? 24.0f : 0)
+#define kSafeAreaInsetsTop             (IphoneX ? 24.0f : 0)
 //Tabbar Safety Bottom Insets
-#define kSafetyAreaBottomInsets        (IphoneX ? 34.0f : 0)
+#define kSafeAreaInsetsBottom          (IphoneX ? 34.0f : 0)
 //Tabbar Default Height
 #define kDefaultTabBarHeight           (49.f)
 //Navbar Default Height
 #define kDefaultNavHeight              (64.f)
 //Tabbar Normal Height
-#define kTabbarHeight                  (IphoneX?kSafetyAreaBottomInsets+kDefaultTabBarHeight:kDefaultTabBarHeight)
+#define kTabbarHeight                  (IphoneX?kSafeAreaInsetsBottom+kDefaultTabBarHeight:kDefaultTabBarHeight)
 //NaviBar Normal Height
-#define kNaviBarHeight                 (IphoneX?kSafetyAreaTopInsets+kDefaultNavHeight:kDefaultNavHeight)
+#define kNaviBarHeight                 (IphoneX?kSafeAreaInsetsTop+kDefaultNavHeight:kDefaultNavHeight)
 
 
 #pragma mark - Sysytem default
@@ -44,21 +44,6 @@ CGSizeEqualToSize(CGSizeMake(1125, 2436), \
 #define kUserDefaults                   [NSUserDefaults standardUserDefaults]
 //NotificationCenter
 #define kNotificationCenter             [NSNotificationCenter defaultCenter]
-//系统版本号
-#define kSystemVersion                  [[UIDevice currentDevice] systemVersion]
-//当前语言
-#define kCurrentLanguage                ([[NSLocale preferredLanguages] objectAtIndex:0])
-//沙盒 Document 路径
-#define kDocumentPath                   [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
-//沙盒 Cache路径
-#define kCachePath                      [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
-//APP Bundle Identifier
-#define kAppBundleIdentifier            [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
-//APP Version
-#define kAppVersion                     [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-//APP DisplayName
-#define kAppDisplayName                 [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
-
 
 #pragma mark - Color Function
 #define HEXCOLOR(rgbValue)              [UIColor \
@@ -83,8 +68,8 @@ colorWithRed:(r)/255.0f \
 #pragma mark - Empty
 //字符串是否为空
 #define kStringIsEmpty(str)             ([str isKindOfClass:[NSNull class]] \
-|| str == nil || \
-[str length] < 1 ? YES : NO )
+|| str == nil \
+|| str.length == 0)
 //数组是否为空
 #define kArrayIsEmpty(array)            (array == nil \
 || [array isKindOfClass:[NSNull class]] \
@@ -98,16 +83,6 @@ colorWithRed:(r)/255.0f \
 || [_object isKindOfClass:[NSNull class]] \
 || ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
 || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
-
-
-#pragma mark - G－C－D
-//异步 线程
-#define BACK(block)                     dispatch_async(\
-dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
-//异步 主线程
-#define MAIN(block)                     dispatch_async(\
-dispatch_get_main_queue(),block)
-
 
 #pragma mark - Other
 //由角度转换弧度

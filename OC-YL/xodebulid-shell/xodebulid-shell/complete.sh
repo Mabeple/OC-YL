@@ -2,10 +2,10 @@
 
 
 ###############设置需编译的项目配置名称###############
-app_build_config="Debug" #编译的方式,有Release,Debug，自定义的AdHoc等
+app_build_config="Release" #编译的方式,有Release,Debug，自定义的AdHoc等
 app_display_name="自定义的"
 app_version="0.1.1"
-app_team_ID="5592LQA29F"
+app_team_ID="Y4CQMPSC2J"
 
 
 
@@ -131,19 +131,21 @@ archive_path="${xcodebuild_path}/archive"
 mkdir -p $archive_path
 log_path="${xcodebuild_path}/log"
 if [ $app_build_config = Debug ];then
-app_direct_name="Debug-iphoneos"
+	app_method=development
+	app_direct_name=Debug-iphoneos
 fi
 if [ $app_build_config = Release ];then
-app_direct_name="Release-iphoneos"
+	app_method=app-store
+	app_direct_name=Release-iphoneos
 fi
 
 
 #--------------------------------------------
 # 打包操作
 #--------------------------------------------
-echo -e "\033[30m*********************  xcodebuild clean  ******************\033[0m"
 if $cocoapods_contain; then
 
+	export LC_ALL="en_US.UTF-8"
 	pod install --verbose --no-repo-update >> $log_path
 
 	workspace_name=${project_path}/${app_target_name}.xcworkspace
@@ -261,11 +263,9 @@ cat << EOF > $exportOptionsPlist
 		<key>compileBitcode</key>
 		<false/>
 		<key>method</key>
-		<string>development</string>
+		<string>$app_method</string>
 		<key>signingStyle</key>
 		<string>automatic</string>
-		<key>stripSwiftSymbols</key>
-		<true/>
 		<key>teamID</key>
 		<string>$app_team_ID</string>
 	</dict>

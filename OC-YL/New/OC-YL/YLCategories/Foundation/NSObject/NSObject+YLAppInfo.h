@@ -10,6 +10,13 @@
 
 @interface NSObject (YLAppInfo)
 /**
+ App display name
+ 
+ @return CFBundleDisplayName
+ */
+- (NSString *)yl_displayName;
+
+/**
  App version
 
  @return CFBundleShortVersionString

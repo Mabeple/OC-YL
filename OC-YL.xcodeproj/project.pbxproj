@@ -10,13 +10,6 @@
 		017A340720B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A340620B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m */; };
 		017A340D20B70637003DB65B /* UIView+YLVisuals.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A340C20B70637003DB65B /* UIView+YLVisuals.m */; };
 		017A341A20B70F9E003DB65B /* YLPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A341920B70F9E003DB65B /* YLPlaceHolderTextView.m */; };
-		01B1844820BB075F00282BC4 /* jenkins.sh in Resources */ = {isa = PBXBuildFile; fileRef = 01B1844120BB075F00282BC4 /* jenkins.sh */; };
-		01B1844920BB075F00282BC4 /* script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 01B1844220BB075F00282BC4 /* script.sh */; };
-		01B1844A20BB075F00282BC4 /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01B1844320BB075F00282BC4 /* ExportOptions.plist */; };
-		01B1844B20BB075F00282BC4 /* qzone.sh in Resources */ = {isa = PBXBuildFile; fileRef = 01B1844420BB075F00282BC4 /* qzone.sh */; };
-		01B1844C20BB075F00282BC4 /* xodebulid-shell.sh in Resources */ = {isa = PBXBuildFile; fileRef = 01B1844520BB075F00282BC4 /* xodebulid-shell.sh */; };
-		01B1844D20BB075F00282BC4 /* Release.sh in Resources */ = {isa = PBXBuildFile; fileRef = 01B1844620BB075F00282BC4 /* Release.sh */; };
-		01B1844E20BB075F00282BC4 /* test.sh in Resources */ = {isa = PBXBuildFile; fileRef = 01B1844720BB075F00282BC4 /* test.sh */; };
 		05C921F424AD79880EAAC953 /* libPods-OC-YL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BE226D338F62B0EDF286D /* libPods-OC-YL.a */; };
 		7713FEA220B7AF8F00E247CC /* NSObject+YLAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7713FEA120B7AF8F00E247CC /* NSObject+YLAppInfo.m */; };
 		7713FEAE20B7BA9900E247CC /* NSObject+YLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7713FEAD20B7BA9900E247CC /* NSObject+YLReflection.m */; };
@@ -64,13 +57,6 @@
 		017A340C20B70637003DB65B /* UIView+YLVisuals.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YLVisuals.m"; sourceTree = "<group>"; };
 		017A341820B70F9E003DB65B /* YLPlaceHolderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPlaceHolderTextView.h; sourceTree = "<group>"; };
 		017A341920B70F9E003DB65B /* YLPlaceHolderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPlaceHolderTextView.m; sourceTree = "<group>"; };
-		01B1844120BB075F00282BC4 /* jenkins.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = jenkins.sh; sourceTree = "<group>"; };
-		01B1844220BB075F00282BC4 /* script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script.sh; sourceTree = "<group>"; };
-		01B1844320BB075F00282BC4 /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
-		01B1844420BB075F00282BC4 /* qzone.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = qzone.sh; sourceTree = "<group>"; };
-		01B1844520BB075F00282BC4 /* xodebulid-shell.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "xodebulid-shell.sh"; sourceTree = "<group>"; };
-		01B1844620BB075F00282BC4 /* Release.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Release.sh; sourceTree = "<group>"; };
-		01B1844720BB075F00282BC4 /* test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
 		23168B0D4A4E80A7C16F6A84 /* Pods-OC-YL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC-YL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL.debug.xcconfig"; sourceTree = "<group>"; };
 		520BE226D338F62B0EDF286D /* libPods-OC-YL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC-YL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7713FEA020B7AF8F00E247CC /* NSObject+YLAppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YLAppInfo.h"; sourceTree = "<group>"; };
@@ -173,28 +159,6 @@
 				017A341920B70F9E003DB65B /* YLPlaceHolderTextView.m */,
 			);
 			path = YLPlaceHolderTextView;
-			sourceTree = "<group>";
-		};
-		0198F45220BA6E150030D6D4 /* xodebulid-shell */ = {
-			isa = PBXGroup;
-			children = (
-				01B1844020BB075F00282BC4 /* xodebulid-shell */,
-			);
-			path = "xodebulid-shell";
-			sourceTree = "<group>";
-		};
-		01B1844020BB075F00282BC4 /* xodebulid-shell */ = {
-			isa = PBXGroup;
-			children = (
-				01B1844120BB075F00282BC4 /* jenkins.sh */,
-				01B1844220BB075F00282BC4 /* script.sh */,
-				01B1844320BB075F00282BC4 /* ExportOptions.plist */,
-				01B1844420BB075F00282BC4 /* qzone.sh */,
-				01B1844520BB075F00282BC4 /* xodebulid-shell.sh */,
-				01B1844620BB075F00282BC4 /* Release.sh */,
-				01B1844720BB075F00282BC4 /* test.sh */,
-			);
-			path = "xodebulid-shell";
 			sourceTree = "<group>";
 		};
 		028FA98A99C1DFA0D514C4CF /* Pods */ = {
@@ -470,7 +434,6 @@
 		77E14900202ADC510011D4FD = {
 			isa = PBXGroup;
 			children = (
-				0198F45220BA6E150030D6D4 /* xodebulid-shell */,
 				77E1490B202ADC510011D4FD /* OC-YL */,
 				77E1490A202ADC510011D4FD /* Products */,
 				028FA98A99C1DFA0D514C4CF /* Pods */,
@@ -576,16 +539,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01B1844C20BB075F00282BC4 /* xodebulid-shell.sh in Resources */,
 				77E14919202ADC510011D4FD /* LaunchScreen.storyboard in Resources */,
-				01B1844920BB075F00282BC4 /* script.sh in Resources */,
-				01B1844820BB075F00282BC4 /* jenkins.sh in Resources */,
 				77E14916202ADC510011D4FD /* Assets.xcassets in Resources */,
 				77E14914202ADC510011D4FD /* Main.storyboard in Resources */,
-				01B1844A20BB075F00282BC4 /* ExportOptions.plist in Resources */,
-				01B1844D20BB075F00282BC4 /* Release.sh in Resources */,
-				01B1844E20BB075F00282BC4 /* test.sh in Resources */,
-				01B1844B20BB075F00282BC4 /* qzone.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

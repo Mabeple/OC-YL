@@ -9,6 +9,13 @@
 #import "NSObject+YLAppInfo.h"
 #import <sys/utsname.h>
 @implementation NSObject (YLAppInfo)
+- (NSString *)yl_displayName
+{
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *app_Version = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    return app_Version;
+}
+
 - (NSString *)yl_version
 {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];

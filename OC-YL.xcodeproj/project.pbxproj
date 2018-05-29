@@ -47,14 +47,6 @@
 		77E14916202ADC510011D4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E14915202ADC510011D4FD /* Assets.xcassets */; };
 		77E14919202ADC510011D4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E14917202ADC510011D4FD /* LaunchScreen.storyboard */; };
 		77E1491C202ADC510011D4FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1491B202ADC510011D4FD /* main.m */; };
-		77EE405B20BC164900FB598F /* complete.sh in Resources */ = {isa = PBXBuildFile; fileRef = 77EE405320BC164900FB598F /* complete.sh */; };
-		77EE405C20BC164900FB598F /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77EE405420BC164900FB598F /* ExportOptions.plist */; };
-		77EE405D20BC164900FB598F /* jenkins.sh in Resources */ = {isa = PBXBuildFile; fileRef = 77EE405520BC164900FB598F /* jenkins.sh */; };
-		77EE405E20BC164900FB598F /* qzone.sh in Resources */ = {isa = PBXBuildFile; fileRef = 77EE405620BC164900FB598F /* qzone.sh */; };
-		77EE405F20BC164900FB598F /* Release.sh in Resources */ = {isa = PBXBuildFile; fileRef = 77EE405720BC164900FB598F /* Release.sh */; };
-		77EE406020BC164900FB598F /* script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 77EE405820BC164900FB598F /* script.sh */; };
-		77EE406120BC164900FB598F /* test.sh in Resources */ = {isa = PBXBuildFile; fileRef = 77EE405920BC164900FB598F /* test.sh */; };
-		77EE406220BC164900FB598F /* xodebulid-shell.sh in Resources */ = {isa = PBXBuildFile; fileRef = 77EE405A20BC164900FB598F /* xodebulid-shell.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,14 +134,6 @@
 		77E1491A202ADC510011D4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77E1491B202ADC510011D4FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77E1497C202B06D70011D4FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		77EE405320BC164900FB598F /* complete.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = complete.sh; sourceTree = "<group>"; };
-		77EE405420BC164900FB598F /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
-		77EE405520BC164900FB598F /* jenkins.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = jenkins.sh; sourceTree = "<group>"; };
-		77EE405620BC164900FB598F /* qzone.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = qzone.sh; sourceTree = "<group>"; };
-		77EE405720BC164900FB598F /* Release.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Release.sh; sourceTree = "<group>"; };
-		77EE405820BC164900FB598F /* script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script.sh; sourceTree = "<group>"; };
-		77EE405920BC164900FB598F /* test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
-		77EE405A20BC164900FB598F /* xodebulid-shell.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "xodebulid-shell.sh"; sourceTree = "<group>"; };
 		B5C178AAEB14C33C18CBD17E /* Pods-OC-YL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC-YL.release.xcconfig"; path = "Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -472,7 +456,6 @@
 		77E1490B202ADC510011D4FD /* OC-YL */ = {
 			isa = PBXGroup;
 			children = (
-				77EE405120BC164900FB598F /* xodebulid-shell */,
 				77ADA89320BBAA7200DFF66C /* OC-YL */,
 				77ACD1B020A5D7DC003EFC78 /* ZLCollectionViewFlowLayout */,
 				77E1490C202ADC510011D4FD /* AppDelegate.h */,
@@ -487,29 +470,6 @@
 				77E1497C202B06D70011D4FD /* PrefixHeader.pch */,
 			);
 			path = "OC-YL";
-			sourceTree = "<group>";
-		};
-		77EE405120BC164900FB598F /* xodebulid-shell */ = {
-			isa = PBXGroup;
-			children = (
-				77EE405220BC164900FB598F /* xodebulid-shell */,
-			);
-			path = "xodebulid-shell";
-			sourceTree = "<group>";
-		};
-		77EE405220BC164900FB598F /* xodebulid-shell */ = {
-			isa = PBXGroup;
-			children = (
-				77EE405320BC164900FB598F /* complete.sh */,
-				77EE405420BC164900FB598F /* ExportOptions.plist */,
-				77EE405520BC164900FB598F /* jenkins.sh */,
-				77EE405620BC164900FB598F /* qzone.sh */,
-				77EE405720BC164900FB598F /* Release.sh */,
-				77EE405820BC164900FB598F /* script.sh */,
-				77EE405920BC164900FB598F /* test.sh */,
-				77EE405A20BC164900FB598F /* xodebulid-shell.sh */,
-			);
-			path = "xodebulid-shell";
 			sourceTree = "<group>";
 		};
 		8A3470D710603F89ACC2226E /* Frameworks */ = {
@@ -582,16 +542,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77E14919202ADC510011D4FD /* LaunchScreen.storyboard in Resources */,
-				77EE406020BC164900FB598F /* script.sh in Resources */,
-				77EE405C20BC164900FB598F /* ExportOptions.plist in Resources */,
-				77EE405B20BC164900FB598F /* complete.sh in Resources */,
-				77EE405D20BC164900FB598F /* jenkins.sh in Resources */,
-				77EE405F20BC164900FB598F /* Release.sh in Resources */,
 				77E14916202ADC510011D4FD /* Assets.xcassets in Resources */,
 				77E14914202ADC510011D4FD /* Main.storyboard in Resources */,
-				77EE406220BC164900FB598F /* xodebulid-shell.sh in Resources */,
-				77EE406120BC164900FB598F /* test.sh in Resources */,
-				77EE405E20BC164900FB598F /* qzone.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

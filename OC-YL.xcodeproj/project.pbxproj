@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		017A340720B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A340620B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m */; };
+		01F7117020C8563700342C4C /* YLCustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F7116F20C8563700342C4C /* YLCustomLayout.m */; };
 		05C921F424AD79880EAAC953 /* libPods-OC-YL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BE226D338F62B0EDF286D /* libPods-OC-YL.a */; };
 		77ACD1B320A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ACD1B220A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.m */; };
 		77ADA90A20BBAA7200DFF66C /* YHWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADA8E420BBAA7200DFF66C /* YHWaterFlowLayout.m */; };
@@ -53,6 +54,8 @@
 /* Begin PBXFileReference section */
 		017A340520B6ED40003DB65B /* UIView+XWAddForRoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XWAddForRoundedCorner.h"; sourceTree = "<group>"; };
 		017A340620B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XWAddForRoundedCorner.m"; sourceTree = "<group>"; };
+		01F7116E20C8563700342C4C /* YLCustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCustomLayout.h; sourceTree = "<group>"; };
+		01F7116F20C8563700342C4C /* YLCustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCustomLayout.m; sourceTree = "<group>"; };
 		23168B0D4A4E80A7C16F6A84 /* Pods-OC-YL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC-YL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL.debug.xcconfig"; sourceTree = "<group>"; };
 		520BE226D338F62B0EDF286D /* libPods-OC-YL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC-YL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77ACD1B120A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCollectionViewFlowLayout.h; sourceTree = "<group>"; };
@@ -152,6 +155,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01F7116D20C8561B00342C4C /* YLCustomLayout */ = {
+			isa = PBXGroup;
+			children = (
+				01F7116E20C8563700342C4C /* YLCustomLayout.h */,
+				01F7116F20C8563700342C4C /* YLCustomLayout.m */,
+			);
+			path = YLCustomLayout;
+			sourceTree = "<group>";
+		};
 		028FA98A99C1DFA0D514C4CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +206,7 @@
 		77ADA8E120BBAA7200DFF66C /* YLUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				01F7116D20C8561B00342C4C /* YLCustomLayout */,
 				77ADA8E220BBAA7200DFF66C /* YHWaterFlowLayout */,
 				77ADA8E520BBAA7200DFF66C /* YLHUDManager */,
 				77ADA8E820BBAA7200DFF66C /* YLPlaceHolderTextView */,
@@ -635,6 +648,7 @@
 				77BDFAC720C7F35A00F6BA79 /* UIView+YLVisuals.m in Sources */,
 				77BDFABC20C7F35A00F6BA79 /* UIColor+YLHEX.m in Sources */,
 				77BDFAB120C7F35A00F6BA79 /* NSObject+YLGCD.m in Sources */,
+				01F7117020C8563700342C4C /* YLCustomLayout.m in Sources */,
 				77BDFAC620C7F35A00F6BA79 /* UIView+YLScreenshot.m in Sources */,
 				77BDFABA20C7F35A00F6BA79 /* UIApplication+YLSandBoxPath.m in Sources */,
 				77ACD1B320A5D7DC003EFC78 /* ZLCollectionViewFlowLayout.m in Sources */,

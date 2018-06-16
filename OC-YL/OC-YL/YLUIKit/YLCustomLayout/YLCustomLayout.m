@@ -135,6 +135,7 @@ NSString *const YLCollectionElementKindSectionFooter = @"UICollectionElementKind
         self.numberOfColumns = 2;
         self.sectionInset = UIEdgeInsetsZero;
         self.layoutType = type;
+        self.itemSize = CGSizeMake(90,100);
     }
     return self;
 }

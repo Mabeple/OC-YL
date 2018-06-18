@@ -29,12 +29,18 @@ typedef NS_ENUM(NSInteger,YLCustomLayoutType) {
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(YLCustomLayout *)layout sizeForItemAtIndexPath:(NSIndexPath *)indexPath itemWidth:(CGFloat)itemWidth;
 @end
+typedef NS_ENUM(NSInteger, YLCustomLayoutScrollDirection) {
+    /// 垂直
+    YLCustomLayoutScrollDirectionVertical,
+    /// 水平
+    YLCustomLayoutScrollDirectionHorizontal
+};
 @interface YLCustomLayout : UICollectionViewLayout
-/// 列数 默认3
+/// 列数 默认2
 @property (assign, nonatomic) NSInteger numberOfColumns;
-/// cell 水平间距 默认10
+/// item 水平间距 默认10
 @property (assign, nonatomic) CGFloat horizontalSpacing;
-/// 垂直间距 默认10
+/// item 垂直间距 默认10
 @property (assign, nonatomic) CGFloat verticalSpacing;
 /// 头视图的高度 初始值为0
 @property (assign, nonatomic) CGFloat headerReferenceHeight;
@@ -42,8 +48,10 @@ typedef NS_ENUM(NSInteger,YLCustomLayoutType) {
 @property (assign, nonatomic) CGFloat footerReferenceHeight;
 /// section 偏移 默认偏移为UIEdgeInsetsZero
 @property (nonatomic) UIEdgeInsets sectionInset;
-/// cell尺寸
+/// item尺寸
 @property (nonatomic) CGSize itemSize;
+/// 滚动方向 默认垂直
+@property (nonatomic) YLCustomLayoutScrollDirection scrollDirection;
 
 - (instancetype)initWithType:(YLCustomLayoutType)type;
 @end

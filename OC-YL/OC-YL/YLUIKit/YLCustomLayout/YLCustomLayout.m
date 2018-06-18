@@ -136,6 +136,7 @@ NSString *const YLCollectionElementKindSectionFooter = @"UICollectionElementKind
         self.sectionInset = UIEdgeInsetsZero;
         self.layoutType = type;
         self.itemSize = CGSizeMake(90,100);
+        self.scrollDirection = YLCustomLayoutScrollDirectionVertical;
     }
     return self;
 }
@@ -170,10 +171,12 @@ NSString *const YLCollectionElementKindSectionFooter = @"UICollectionElementKind
         //section header
         if (headerHeight > 0 && [self.collectionView.dataSource respondsToSelector:@selector(collectionView: viewForSupplementaryElementOfKind: atIndexPath:)]) {
             UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:YLCollectionElementKindSectionHeader withIndexPath:[NSIndexPath indexPathForRow:0 inSection:section]];
-            attributes.frame = CGRectMake(0, top, self.collectionView.frame.size.width, [self heightForHeaderInSection:section]);
+            
+            CGRect rect = self.scrollDirection == YLCustomLayoutScrollDirectionVertical ? CGRectMake(0, top, self.collectionView.frame.size.width, [self heightForHeaderInSection:section]) : CGRectMake(top, 0, [self heightForHeaderInSection:section],self.collectionView.bounds.size.height);
+            attributes.frame = rect;
             [self.attributesArray addObject:attributes];
         }
-        top += sectionInset.top + headerHeight;
+        top += self.scrollDirection == YLCustomLayoutScrollDirectionVertical ? (sectionInset.top + headerHeight) : (sectionInset.left + headerHeight);
         for (int i = 0; i < numberOfColumns; ++i) {
             self.columnHeights[section][i] = @(top);
         }
@@ -184,25 +187,29 @@ NSString *const YLCollectionElementKindSectionFooter = @"UICollectionElementKind
         for (NSInteger row = 0; row < rowCount; ++row) {
             UICollectionViewLayoutAttributes *attribute = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:[NSIndexPath indexPathForItem:row inSection:section]];
             NSUInteger columnIndex = [self shortestColumnIndexInSection:section];
-            CGFloat itemWidth = (self.collectionView.bounds.size.width -sectionInset.left - sectionInset.right - (numberOfColumns -1) *horizontalSpacing)/numberOfColumns;
+            CGFloat itemWidth = self.scrollDirection == YLCustomLayoutScrollDirectionVertical ? ((self.collectionView.bounds.size.width -sectionInset.left - sectionInset.right - (numberOfColumns -1) *horizontalSpacing)/numberOfColumns) :((self.collectionView.bounds.size.height - sectionInset.top - sectionInset.bottom - (numberOfColumns - 1) * verticalSpacing)/numberOfColumns);
+            
+            
             CGSize itemSize = [self sizeForItemAtIndexPath:[NSIndexPath indexPathForRow:row inSection:section] itemWidth:itemWidth];
-            CGFloat x = sectionInset.left+ (horizontalSpacing + itemWidth)*columnIndex;
-            CGFloat y = [self.columnHeights[section][columnIndex] floatValue];
-            attribute.frame = CGRectMake(x, y, itemWidth, itemSize.height);
+            CGFloat x = self.scrollDirection == YLCustomLayoutScrollDirectionVertical ?   (sectionInset.left+ (horizontalSpacing + itemWidth)*columnIndex) : [self.columnHeights[section][columnIndex] floatValue];
+            CGFloat y = self.scrollDirection == YLCustomLayoutScrollDirectionVertical ?   [self.columnHeights[section][columnIndex] floatValue] : (sectionInset.top+ (horizontalSpacing + itemWidth)*columnIndex);
+            CGRect rect = self.scrollDirection == YLCustomLayoutScrollDirectionVertical ?  CGRectMake(x, y, itemWidth, itemSize.height) :CGRectMake(x, y, itemSize.height,itemWidth);
             [self.attributesArray addObject:attribute];
-            self.columnHeights[section][columnIndex] = @(CGRectGetMaxY(attribute.frame) + verticalSpacing);
+            attribute.frame = rect;
+            self.columnHeights[section][columnIndex] = self.scrollDirection == YLCustomLayoutScrollDirectionVertical ? @(CGRectGetMaxY(attribute.frame) + verticalSpacing) : @(CGRectGetMaxX(attribute.frame) + horizontalSpacing);
             [itemAttributes addObject:attribute];
         }
         [self.sectionItemAttributes addObject:itemAttributes];
         
         //section fotter
         NSUInteger columnIndex = [self longestColumnIndexInSection:section];
-        top = [self.columnHeights[section][columnIndex] floatValue] - verticalSpacing + sectionInset.bottom;
+        top = self.scrollDirection == YLCustomLayoutScrollDirectionVertical ? ([self.columnHeights[section][columnIndex] floatValue] - verticalSpacing + sectionInset.bottom) : ([self.columnHeights[section][columnIndex] floatValue] - horizontalSpacing + sectionInset.right);
         if (footerHeight > 0 && [self.collectionView.dataSource respondsToSelector:@selector(collectionView: viewForSupplementaryElementOfKind: atIndexPath:)]) {
             UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:YLCollectionElementKindSectionFooter withIndexPath:[NSIndexPath indexPathForRow:0 inSection:section]];
-            attributes.frame = CGRectMake(0, top, self.collectionView.frame.size.width, footerHeight);
+            CGRect rect = self.scrollDirection == YLCustomLayoutScrollDirectionVertical ? (CGRectMake(0, top, self.collectionView.frame.size.width, footerHeight)) : (CGRectMake(top, 0, footerHeight,self.collectionView.frame.size.height));
+            attributes.frame = rect;
             [self.attributesArray addObject:attributes];
-            top = CGRectGetMaxY(attributes.frame);
+            top =  self.scrollDirection == YLCustomLayoutScrollDirectionVertical ? (CGRectGetMaxY(attributes.frame)) : (CGRectGetMaxX(attributes.frame));
         }
         for (int i = 0; i < numberOfColumns; ++i) {
             self.columnHeights[section][i] = @(top);
@@ -215,7 +222,12 @@ NSString *const YLCollectionElementKindSectionFooter = @"UICollectionElementKind
         return CGSizeZero;
     }
     CGSize contentSize = self.collectionView.bounds.size;
-    contentSize.height = [[[self.columnHeights lastObject] firstObject] floatValue];
+    if (self.scrollDirection == YLCustomLayoutScrollDirectionVertical) {
+        contentSize.height = [[[self.columnHeights lastObject] firstObject] floatValue];
+    }else{
+        contentSize.width = [[[self.columnHeights lastObject] firstObject] floatValue];
+    }
+    
     return contentSize;
 }
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect

@@ -11,7 +11,14 @@ UIKIT_EXTERN NSString *const YLCollectionElementKindSectionHeader;
 UIKIT_EXTERN NSString *const YLCollectionElementKindSectionFooter;
 @class YLCustomLayout;
 typedef NS_ENUM(NSInteger,YLCustomLayoutType) {
-    YLCustomLayoutTypeWaterFlow, /// 流水布局
+    /// 流水布局
+    YLCustomLayoutTypeWaterFlow,
+};
+typedef NS_ENUM(NSInteger, YLCustomLayoutScrollDirection) {
+    /// 垂直
+    YLCustomLayoutScrollDirectionVertical,
+    /// 水平
+    YLCustomLayoutScrollDirectionHorizontal
 };
 @protocol YLCustomLayoutDelegate<UICollectionViewDelegate>
 
@@ -29,12 +36,6 @@ typedef NS_ENUM(NSInteger,YLCustomLayoutType) {
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(YLCustomLayout *)layout sizeForItemAtIndexPath:(NSIndexPath *)indexPath itemWidth:(CGFloat)itemWidth;
 @end
-typedef NS_ENUM(NSInteger, YLCustomLayoutScrollDirection) {
-    /// 垂直
-    YLCustomLayoutScrollDirectionVertical,
-    /// 水平
-    YLCustomLayoutScrollDirectionHorizontal
-};
 @interface YLCustomLayout : UICollectionViewLayout
 /// 列数 默认2
 @property (assign, nonatomic) NSInteger numberOfColumns;

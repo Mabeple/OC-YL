@@ -11,10 +11,27 @@
 
 
 #pragma mark - Size
+//Iphone4s
+#define IPhone4S                       ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), \
+    [[UIScreen mainScreen] currentMode].size) : NO)
+
+//Iphone5
+#define IPhone5                         ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), \
+    [[UIScreen mainScreen] currentMode].size) : NO)
+
+//Iphone6
+#define IPhone6                         ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), \
+    [[UIScreen mainScreen] currentMode].size) : NO)
+
+//Iphone6p
+#define IPhone6P                        ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), \
+    [[UIScreen mainScreen] currentMode].size) : NO)
+
 //IphoneX
 #define IphoneX                        ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? \
-CGSizeEqualToSize(CGSizeMake(1125, 2436), \
-[[UIScreen mainScreen] currentMode].size) : NO)
+    CGSizeEqualToSize(CGSizeMake(1125, 2436), \
+    [[UIScreen mainScreen] currentMode].size) : NO)
+
 //屏幕 宽度
 #define kScreenWidth                   ([UIScreen mainScreen].bounds.size.width)
 //屏幕 宽度

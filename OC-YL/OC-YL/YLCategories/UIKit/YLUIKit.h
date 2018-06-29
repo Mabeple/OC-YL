@@ -13,6 +13,7 @@
 #pragma mark ======================== UIButton ========================
 
 #import "UIButton+YLTouchAreaInsets.h"
+#import "UIButton+YLIndicator.h"
 
 #pragma mark ======================== UIView  ========================
 

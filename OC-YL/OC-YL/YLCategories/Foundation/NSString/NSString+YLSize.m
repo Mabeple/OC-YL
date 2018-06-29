@@ -20,12 +20,12 @@
 - (CGFloat)yl_widthForFont:(UIFont *)font
 {
     CGSize size = [self yl_sizeForFont:font maxSize:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
-    return size.width;
+    return ceil(size.width);
 }
 - (CGFloat)yl_heightForFont:(UIFont *)font maxWidth:(CGFloat)width
 {
     CGSize size = [self yl_sizeForFont:font maxSize:CGSizeMake(width, HUGE) mode:NSLineBreakByWordWrapping];
-    return size.height;
+    return ceil(size.height);
 }
 - (CGSize)yl_sizeForFont:(UIFont *)font maxSize:(CGSize)size mode:(NSLineBreakMode)lineBreakMode
 {

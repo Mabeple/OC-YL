@@ -58,7 +58,7 @@ NSString* const yl_iTunesAppleString = @"itunes.apple.com";
 
 + (NSURL*)yl_appURLForIdentifier:(NSInteger)identifier
 {
-    NSString* appURLString = [NSString stringWithFormat:@"https://itunes.apple.com/app/id%li", (long)identifier];
+    NSString* appURLString = [NSString stringWithFormat:@"https://itunes.apple.com/cn/app/id%li", (long)identifier];
     return [NSURL URLWithString:appURLString];
 }
 

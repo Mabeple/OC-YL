@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface NSTimer (YLBlocks)
 /**
  Creates and returns a new NSTimer object initialized with the specified block object and schedules it on the current run loop in the default mode.
@@ -29,3 +29,4 @@
  */
 + (NSTimer *)yl_timerWithTimeInterval:(NSTimeInterval)interval repeats:(BOOL)repeats block:(void (^)(void))block;
 @end
+NS_ASSUME_NONNULL_END

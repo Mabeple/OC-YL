@@ -7,14 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface UIView (YLScreenshot)
 
 /**
- view截图
-
- @return 截图
+ Create a snapshot image of the complete view hierarchy.
  */
-- (UIImage *)yl_screenshot;
+- (nullable UIImage *)yl_screenshot;
 
+
+/**
+ Create a snapshot PDF of the complete view hierarchy.
+ */
+- (nullable NSData *)yl_snapshotPDF;
 @end
+NS_ASSUME_NONNULL_END

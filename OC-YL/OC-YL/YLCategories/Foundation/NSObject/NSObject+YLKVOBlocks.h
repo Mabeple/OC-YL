@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+NS_ASSUME_NONNULL_BEGIN
 typedef void (^YLKVOBlock)(NSDictionary<NSKeyValueChangeKey,id> *change, void *context);
 @interface NSObject (YLKVOBlocks)
 
@@ -54,3 +55,4 @@ typedef void (^YLKVOBlock)(NSDictionary<NSKeyValueChangeKey,id> *change, void *c
  */
 - (void)yl_removeBlockObserverForKeyPath:(NSString *)keyPath;
 @end
+NS_ASSUME_NONNULL_END

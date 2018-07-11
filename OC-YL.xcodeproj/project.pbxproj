@@ -10,6 +10,7 @@
 		0126FC6B20D7F47A00D8364F /* YLCustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0126FC6A20D7F47A00D8364F /* YLCustomLayout.m */; };
 		017A340720B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A340620B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m */; };
 		05C921F424AD79880EAAC953 /* libPods-OC-YL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BE226D338F62B0EDF286D /* libPods-OC-YL.a */; };
+		776D5EF720F5B7310060A4F7 /* UILabel+YLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5EF620F5B7310060A4F7 /* UILabel+YLUtils.m */; };
 		777B629020E5D0930042CD98 /* YLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777B628F20E5D0930042CD98 /* YLViewController.m */; };
 		777B629820E5D60E0042CD98 /* WKWebView+YLLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 777B629720E5D60E0042CD98 /* WKWebView+YLLoad.m */; };
 		777B629B20E5FD2F0042CD98 /* UIButton+YLIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 777B629A20E5FD2F0042CD98 /* UIButton+YLIndicator.m */; };
@@ -61,6 +62,8 @@
 		017A340620B6ED40003DB65B /* UIView+XWAddForRoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XWAddForRoundedCorner.m"; sourceTree = "<group>"; };
 		23168B0D4A4E80A7C16F6A84 /* Pods-OC-YL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC-YL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL.debug.xcconfig"; sourceTree = "<group>"; };
 		520BE226D338F62B0EDF286D /* libPods-OC-YL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC-YL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		776D5EF520F5B7310060A4F7 /* UILabel+YLUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+YLUtils.h"; sourceTree = "<group>"; };
+		776D5EF620F5B7310060A4F7 /* UILabel+YLUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YLUtils.m"; sourceTree = "<group>"; };
 		777B628E20E5D0930042CD98 /* YLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLViewController.h; sourceTree = "<group>"; };
 		777B628F20E5D0930042CD98 /* YLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLViewController.m; sourceTree = "<group>"; };
 		777B629620E5D60E0042CD98 /* WKWebView+YLLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+YLLoad.h"; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 			children = (
 				77BDFA8D20C7F35A00F6BA79 /* UILabel+YLContentInsets.h */,
 				77BDFA8E20C7F35A00F6BA79 /* UILabel+YLContentInsets.m */,
+				776D5EF520F5B7310060A4F7 /* UILabel+YLUtils.h */,
+				776D5EF620F5B7310060A4F7 /* UILabel+YLUtils.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -679,6 +684,7 @@
 				77BDFAB020C7F35A00F6BA79 /* NSObject+YLAppInfo.m in Sources */,
 				77ADA90D20BBAA7200DFF66C /* YLUI.m in Sources */,
 				77BDFAC420C7F35A00F6BA79 /* UIView+YLFrame.m in Sources */,
+				776D5EF720F5B7310060A4F7 /* UILabel+YLUtils.m in Sources */,
 				77BDFAC720C7F35A00F6BA79 /* UIView+YLVisuals.m in Sources */,
 				77BDFABC20C7F35A00F6BA79 /* UIColor+YLHEX.m in Sources */,
 				77BDFAB120C7F35A00F6BA79 /* NSObject+YLGCD.m in Sources */,

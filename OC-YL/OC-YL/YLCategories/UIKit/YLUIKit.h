@@ -9,6 +9,7 @@
 #pragma mark ======================== UILabel ========================
 
 #import "UILabel+YLContentInsets.h"
+#import "UILabel+YLUtils.h"
 
 #pragma mark ======================== UIButton ========================
 

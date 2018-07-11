@@ -14,7 +14,7 @@
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text];
     [attributedString addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, [text length])];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    [paragraphStyle setLineSpacing:lineSpacing - self.font.lineHeight - self.font.pointSize];
+    [paragraphStyle setLineSpacing:lineSpacing - (self.font.lineHeight - self.font.pointSize)];
     [paragraphStyle setLineBreakMode:self.lineBreakMode];
     [paragraphStyle setAlignment:self.textAlignment];
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [text length])];

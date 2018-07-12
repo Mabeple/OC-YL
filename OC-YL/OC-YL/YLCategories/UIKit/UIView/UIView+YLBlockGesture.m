@@ -47,11 +47,9 @@ static char yl_kActionHandlerLongPressGestureKey;
 }
 - (void)yl_handleActionForLongPressGesture:(UITapGestureRecognizer*)gesture
 {
-    if (gesture.state == UIGestureRecognizerStateRecognized){
-        YLGestureActionBlock block = objc_getAssociatedObject(self, &yl_kActionHandlerLongPressBlockKey);
-        if (block){
-            block(gesture);
-        }
+    YLGestureActionBlock block = objc_getAssociatedObject(self, &yl_kActionHandlerLongPressBlockKey);
+    if (block){
+        block(gesture);
     }
 }
 

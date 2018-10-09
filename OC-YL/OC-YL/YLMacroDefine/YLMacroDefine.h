@@ -10,44 +10,63 @@
 #define YLMacroDefine_h
 
 
+//判断是否是ipad
+#define isPad                           ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+
 #pragma mark - Size
 //Iphone4s
-#define IPhone4S                       ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), \
-    [[UIScreen mainScreen] currentMode].size) : NO)
+#define IPhone4S                        ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), \
+    [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
 
 //Iphone5
 #define IPhone5                         ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), \
-    [[UIScreen mainScreen] currentMode].size) : NO)
+    [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
 
 //Iphone6
 #define IPhone6                         ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), \
-    [[UIScreen mainScreen] currentMode].size) : NO)
+    [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
 
 //Iphone6p
 #define IPhone6P                        ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), \
-    [[UIScreen mainScreen] currentMode].size) : NO)
+    [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
 
 //IphoneX
 #define IphoneX                        ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? \
     CGSizeEqualToSize(CGSizeMake(1125, 2436), \
-    [[UIScreen mainScreen] currentMode].size) : NO)
+    [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+
+//IphoneXs
+#define IphoneXs                        ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? \
+    CGSizeEqualToSize(CGSizeMake(1125, 2436), \
+    [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+
+//IphoneXr
+#define IphoneXR                        ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? \
+    CGSizeEqualToSize(CGSizeMake(828, 1792), \
+    [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+
+//IphoneXs max
+#define IphoneXsMax                        ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? \
+    CGSizeEqualToSize(CGSizeMake(1242, 2688), \
+    [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+
 
 //屏幕 宽度
 #define kScreenWidth                   ([UIScreen mainScreen].bounds.size.width)
 //屏幕 宽度
 #define kScreenHeight                  ([UIScreen mainScreen].bounds.size.height)
 //Navbar Safety Top Insets
-#define kSafeAreaInsetsTop             (IphoneX ? 24.0f : 0)
+#define kSafeAreaInsetsTop             ((IphoneX || IphoneXs || IphoneXR || IphoneXsMax) ? 24.0f : 0)
 //Tabbar Safety Bottom Insets
-#define kSafeAreaInsetsBottom          (IphoneX ? 34.0f : 0)
+#define kSafeAreaInsetsBottom          ((IphoneX || IphoneXs || IphoneXR ||IphoneXsMax) ? 34.0f : 0)
 //Tabbar Default Height
 #define kDefaultTabBarHeight           (49.f)
 //Navbar Default Height
 #define kDefaultNavHeight              (64.f)
 //Tabbar Normal Height
-#define kTabbarHeight                  (IphoneX?kSafeAreaInsetsBottom+kDefaultTabBarHeight:kDefaultTabBarHeight)
+#define kTabbarHeight                  ((IphoneX || IphoneXs || IphoneXR || IphoneXsMax) ? kSafeAreaInsetsBottom + kDefaultTabBarHeight:kDefaultTabBarHeight)
 //NaviBar Normal Height
-#define kNaviBarHeight                 (IphoneX?kSafeAreaInsetsTop+kDefaultNavHeight:kDefaultNavHeight)
+#define kNaviBarHeight                 ((IphoneX || IphoneXs || IphoneXR || IphoneXsMax) ? kSafeAreaInsetsTop + kDefaultNavHeight:kDefaultNavHeight)
 
 
 #pragma mark - Sysytem default

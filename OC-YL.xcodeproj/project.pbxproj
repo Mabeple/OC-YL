@@ -545,7 +545,6 @@
 				77E14905202ADC510011D4FD /* Sources */,
 				77E14906202ADC510011D4FD /* Frameworks */,
 				77E14907202ADC510011D4FD /* Resources */,
-				AB7AC574AC191A7D24864924 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -604,32 +603,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AB7AC574AC191A7D24864924 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL-resources.sh",
-				"${PODS_ROOT}/CLImageEditor/CLImageEditor/CLImageEditor.bundle",
-				"${PODS_ROOT}/CYTabBar/CYTabBar/CYTabBar.bundle",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/QIYU_iOS_SDK/SDK/QYResource.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CLImageEditor.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CYTabBar.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QYResource.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OC-YL/Pods-OC-YL-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CADE2AB940B4A541479D9177 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

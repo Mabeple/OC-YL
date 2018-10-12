@@ -11,7 +11,7 @@ env:
 before_install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
   - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
-  - pod install --project-directory="$XCODE_WORKSPACE"
+  - pod install 
 script:
   - xcodebuild -workspace "OC-YL.xcworkspace " -scheme "$SCHEME" -configuration Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
   - xcodebuild -workspace "OC-YL.xcworkspace " -scheme "$SCHEME" -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c

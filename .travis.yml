@@ -4,7 +4,7 @@ osx_image: xcode10
 
 env:
   global:
-    - XCODE_PROJ=OC-YL/OC-YL.xcodeproj
+    - XCODE_PROJ=OC-YL/OC-YL.xcworkspace
   matrix:
     - SCHEME="OC-YL"
 

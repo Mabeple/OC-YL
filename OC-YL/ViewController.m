@@ -21,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    aaa
 //    [self jk_version];
 //    DLog(@"%@",[@"dqwd" yl_md5]);
 //    DLog(@"%f",[@"dqwd" yl_sizeForFont:[UIFont systemFontOfSize:15]].height);

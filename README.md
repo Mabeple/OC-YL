@@ -1,5 +1,5 @@
 # 常用分类
-[![Build Status](https://travis-ci.org/michaelliao/openweixin.svg?branch=master)](https://travis-ci.org/Mabeple/OC-YL)
+[![Build Status](https://travis-ci.com/Mabeple/OC-YL.svg?branch=master)](https://travis-ci.com/Mabeple/OC-YL)
 ## Foundation
 > NSString
 > > * NSString+YLHash 

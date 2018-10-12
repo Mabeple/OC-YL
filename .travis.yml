@@ -4,18 +4,19 @@ osx_image: xcode10
 
 env:
   global:
-    - XCODE_PROJ=OC-YL/OC-YL.xcworkspace
+    - XCODE_WORKSPACE=OC-YL/OC-YL.xcworkspace 
   matrix:
     - SCHEME="OC-YL"
 
 before_install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-
+  - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
+  - pod install --project-directory=Example
 script:
   - set -o pipefail
   - xcodebuild -project "$XCODE_PROJ" -scheme "$SCHEME" -configuration Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
   - xcodebuild -project "$XCODE_PROJ" -scheme "$SCHEME" -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
-
+  - pod lib lint --allow-warnings
 after_success:
   - bash <(curl -s https://codecov.io/bash)
   - sleep 10
